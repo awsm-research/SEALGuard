@@ -1,9 +1,9 @@
-python lora_main_1_gpu.py \
+python lora_main.py \
     --do_train \
     --batch_size=1 \
     --data_dir=data \
-    --model_name_or_path=SeaLLMs/SeaLLMs-v3-1.5B-Chat \
-    --saved_model_name=SEALGuard-1B \
+    --model_name_or_path=SeaLLMs/SeaLLMs-v3-7B-Chat \
+    --saved_model_name=SEALGuard-7B \
     --learning_rate=1e-4 \
     --epochs=3 \
     --max_grad_norm=1.0 \
@@ -12,4 +12,4 @@ python lora_main_1_gpu.py \
     --lora_dropout=0.05 \
     --max_train_input_length=2048 \
     --max_new_tokens=5 \
-    --seed 123456  2>&1 | tee lora_1b.log
+    --seed 123456  2>&1 | tee lora_7b.log
