@@ -1,0 +1,44 @@
+# Essential packages for SealGuard Guardrail Project
+# Based on working environment versions
+
+# Core ML and Data Processing
+torch==2.7.0
+transformers==4.50.3
+datasets==3.6.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.1.post1
+
+# LoRA and Parameter Efficient Fine-tuning
+peft==0.16.0
+
+# Progress Bars and Utilities
+tqdm==4.66.5
+
+# HuggingFace Hub
+huggingface-hub==0.30.1
+tokenizers==0.21.1
+safetensors==0.5.3
+
+# Training Acceleration
+accelerate==1.6.0
+
+# Core Python packages
+requests==2.32.3
+PyYAML==6.0.2
+regex==2024.9.11
+packaging==24.0
+filelock==3.16.0
+typing_extensions==4.13.1
+
+# Optional: For better performance (if GPU available)
+# Note: Only install if you have compatible CUDA setup
+# bitsandbytes  # Not in your current freeze output
+
+# Python Standard Library (usually included)
+# argparse - built-in
+# os - built-in
+# json - built-in
+# logging - built-in
+# pickle - built-in
+# random - built-in
